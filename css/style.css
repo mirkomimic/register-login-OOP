@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.flexCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+.flexRow {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  gap: 3px;
+}
+input,
+button {
+  width: 20rem;
+  margin: 3px 0;
+  padding: 3px;
+}
+.wrapper {
+  margin-top: 3rem;
+}
+.index-signup,
+.index-login {
+  margin: 2rem 2rem;
+}
+
+@media screen and (max-width: 700px) {
+  .wrapper {
+    align-items: center;
+    flex-direction: column;
+  }
+  form {
+    width: 20rem;
+  }
+}
